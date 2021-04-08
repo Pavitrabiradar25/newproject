@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+
+{% block body_block %}
+
+	<h1>Student Insertion Form</h1>
+
+	<form method="POST">
+		<table border="2">
+			{{ form.as_p }}
+		</table>
+		{% csrf_token %}
+		<input type="submit" name="" value="Insert Record">
+		
+	</form>
+{% endblock body_block %}
